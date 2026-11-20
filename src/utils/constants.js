@@ -1,0 +1,202 @@
+/**
+ * SafeRoute Constants & Verified Resources
+ */
+
+export const DEFAULT_USER = {
+  id: 'usr_demo_01',
+  name: 'Ananya Sharma',
+  email: 'ananya@example.com',
+  phone: '+91 98765 43210',
+  avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+  bloodGroup: 'B+',
+  emergencyNotes: 'Allergic to Penicillin. Carries asthma inhaler.',
+  address: 'Flat 402, Green Glen Layout, Bengaluru, Karnataka 560103',
+  createdAt: '2026-01-15T10:00:00.000Z',
+};
+
+export const INITIAL_CONTACTS = [
+  {
+    id: 'cnt_01',
+    name: 'Pooja Sharma (Sister)',
+    phone: '+91 98765 11223',
+    relation: 'Sister',
+    isPrimary: true,
+    notifySms: true,
+    notes: 'Lives 10 mins away, always reachable',
+    createdAt: '2026-02-01T08:30:00.000Z',
+  },
+  {
+    id: 'cnt_02',
+    name: 'Rohit Verma (Friend / Roommate)',
+    phone: '+91 98111 22334',
+    relation: 'Roommate',
+    isPrimary: false,
+    notifySms: true,
+    notes: 'Shares apartment in Koramangala',
+    createdAt: '2026-02-05T14:20:00.000Z',
+  },
+  {
+    id: 'cnt_03',
+    name: 'Sunita Sharma (Mother)',
+    phone: '+91 99887 76655',
+    relation: 'Mother',
+    isPrimary: false,
+    notifySms: true,
+    notes: 'Family contact in Delhi',
+    createdAt: '2026-02-10T11:15:00.000Z',
+  },
+];
+
+export const DEFAULT_SETTINGS = {
+  soundAlerts: true,
+  sirenVolume: 80,
+  vibrationEnabled: true,
+  autoLocationShareOnSos: true,
+  countdownSeconds: 5,
+  checkInReminderMinutes: 5,
+  privacyMode: false,
+  theme: 'light',
+};
+
+// Verified emergency helpline numbers (Primary focus: India + International universal)
+export const VERIFIED_HELPLINES = [
+  {
+    id: 'help_112',
+    name: 'National Emergency Helpline (ERSS)',
+    number: '112',
+    category: 'Universal Emergency',
+    description: 'All-in-one emergency service across India (Police, Fire, Ambulance, Disaster). Toll-free 24x7.',
+    country: 'India (Universal)',
+    badge: 'Toll-Free 24x7',
+    icon: 'ShieldAlert',
+  },
+  {
+    id: 'help_1091',
+    name: 'Women Helpline (Domestic Abuse & Distress)',
+    number: '1091',
+    category: 'Women Protection',
+    description: 'Direct police helpline for women in distress, stalking, and immediate physical threat.',
+    country: 'India',
+    badge: '24x7 Dedicated',
+    icon: 'UserCheck',
+  },
+  {
+    id: 'help_181',
+    name: 'National Women Helpline (NCW)',
+    number: '181',
+    category: 'Support & Counseling',
+    description: '24-hour toll-free telecom service providing integrated support and assistance to women affected by violence.',
+    country: 'India',
+    badge: '24x7 Support',
+    icon: 'PhoneCall',
+  },
+  {
+    id: 'help_100',
+    name: 'Police Emergency Response',
+    number: '100',
+    category: 'Law Enforcement',
+    description: 'Immediate police squad car dispatch for urgent criminal offenses and emergencies.',
+    country: 'India',
+    badge: 'Emergency',
+    icon: 'Shield',
+  },
+  {
+    id: 'help_108',
+    name: 'Ambulance & Medical Emergency',
+    number: '108',
+    category: 'Medical',
+    description: 'Immediate response service for medical emergencies, trauma care, and patient transport.',
+    country: 'India',
+    badge: 'Medical 24x7',
+    icon: 'Activity',
+  },
+  {
+    id: 'help_1930',
+    name: 'National Cyber Crime Helpline',
+    number: '1930',
+    category: 'Cyber Safety',
+    description: 'Reporting financial fraud, online harassment, non-consensual image sharing, and cyber stalking.',
+    country: 'India',
+    badge: 'Cyber Safety',
+    icon: 'Lock',
+  },
+  {
+    id: 'help_1098',
+    name: 'Childline / Protection of Minors',
+    number: '1098',
+    category: 'Child Safety',
+    description: '24-hour free emergency phone service for children in need of aid and assistance.',
+    country: 'India',
+    badge: 'Child Helpline',
+    icon: 'Heart',
+  },
+  {
+    id: 'help_911',
+    name: 'Universal Emergency (US / Canada)',
+    number: '911',
+    category: 'International',
+    description: 'Standard emergency telephone number for the North American Numbering Plan.',
+    country: 'USA / Canada',
+    badge: 'International',
+    icon: 'Globe',
+  },
+  {
+    id: 'help_999',
+    name: 'Universal Emergency (UK)',
+    number: '999',
+    category: 'International',
+    description: 'Official emergency number for the United Kingdom, police, ambulance, fire, coastguard.',
+    country: 'United Kingdom',
+    badge: 'International',
+    icon: 'Globe',
+  },
+];
+
+export const SAFETY_GUIDES = [
+  {
+    id: 'guide_transit',
+    title: 'Safe Commute & Late-Night Travel',
+    summary: 'Essential habits when traveling alone in taxis, public transit, or auto-rickshaws at night.',
+    points: [
+      'Always share your ride details or live trip link with at least one trusted contact before entering.',
+      'Check child-lock status on taxi doors before setting off to ensure you can exit at any moment.',
+      'Sit directly behind the driver in cabs; this prevents easy physical access from the front.',
+      'If a driver deviates from the designated route without cause, object firmly and phone someone aloud.',
+      'Keep your phone battery above 30% or carry a charged power bank whenever you anticipate late commutes.',
+    ],
+  },
+  {
+    id: 'guide_digital',
+    title: 'Digital Privacy & Stalker Prevention',
+    summary: 'Protecting your personal location and digital footprint on social networks.',
+    points: [
+      'Never post real-time location check-ins on public Instagram or social stories; post after departing.',
+      'Disable automated location tagging in camera apps if sharing high-resolution photos online.',
+      'Review AirTag and Bluetooth tracker alerts promptly on iOS or Android devices.',
+      'Keep two-factor authentication enabled on all personal email and messaging accounts.',
+    ],
+  },
+  {
+    id: 'guide_sos',
+    title: 'What to Do in an Escalating Situation',
+    summary: 'Quick de-escalation, loud deterrence, and getting immediate public help.',
+    points: [
+      'Trust your instincts early: if a situation or person feels uncomfortable, do not wait for politeness.',
+      'Move toward brightly lit open commercial areas, convenience stores, hotel lobbies, or fuel stations.',
+      'If followed, make direct eye contact to signal alertness, cross the street, and call someone loudly.',
+      'In immediate danger, shout specific words: "FIRE!" or "POLICE!" draws quicker bystander reaction than generic screams.',
+      'Use the SafeRoute SOS button to broadcast your instant GPS coordinates to your primary circle.',
+    ],
+  },
+  {
+    id: 'guide_legal',
+    title: 'Legal Rights & Zero FIR Information',
+    summary: 'Key legal provisions protecting women in India.',
+    points: [
+      'Zero FIR: A woman can lodge a complaint at any police station regardless of jurisdiction.',
+      'Right to Free Legal Aid: Women victims are legally entitled to free legal aid from DLSA.',
+      'Arrest Safeguards: Women cannot be arrested after sunset and before sunrise except in extraordinary magistrate orders.',
+      'Virtual Complaints: In cases of harassment, women can file complaints via email or registered postal letter if unable to visit physically.',
+    ],
+  },
+];
